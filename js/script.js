@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function () {
 	// 平滑滚动
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
@@ -16,7 +16,7 @@
 	// CTA按钮点击事件
 	const ctaButton = document.querySelector('.cta-button');
 	if (ctaButton) {
-		ctaButton.addEventListener('click', function() {
+		ctaButton.addEventListener('click', function () {
 			document.querySelector('#about').scrollIntoView({
 				behavior: 'smooth'
 			});
@@ -25,7 +25,7 @@
 
 	// 导航栏滚动效果
 	let lastScroll = 0;
-	window.addEventListener('scroll', function() {
+	window.addEventListener('scroll', function () {
 		const currentScroll = window.pageYOffset;
 		const header = document.querySelector('header');
 
@@ -46,7 +46,7 @@
 		rootMargin: '0px 0px -50px 0px'
 	};
 
-	const observer = new IntersectionObserver(function(entries) {
+	const observer = new IntersectionObserver(function (entries) {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				entry.target.style.opacity = '1';
