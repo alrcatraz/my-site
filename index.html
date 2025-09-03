@@ -6,12 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alrcatraz - Write, Code, Future</title>
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Ubuntu and Noto Sans SC for headings -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Noto Serif and Noto Serif SC for body text -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+	<!-- Animated background -->
+	<div class="animated-bg"></div>
+
 	<header>
 		<nav>
 			<h1>Alrcatraz - Write, Code, Future</h1>
@@ -27,48 +44,112 @@
 	<main>
 		<section id="home">
 			<div class="hero">
-				<h2>Welcome to my personal website</h2>
-				<p>You can know my projects and myself here</p>
-				<button class="cta-button">Explore</button>
+				<div class="hero-content">
+					<h2 class="animate-text">Welcome to my personal website</h2>
+					<p class="animate-text">You can know my projects and myself here</p>
+					<button class="cta-button animate-text">
+						<span>Explore</span>
+						<i class="fas fa-arrow-right"></i>
+					</button>
+				</div>
+				<div class="hero-visual">
+					<div class="floating-elements">
+						<div class="float-element"><i class="fas fa-code"></i></div>
+						<div class="float-element"><i class="fas fa-pen"></i></div>
+						<div class="float-element"><i class="fas fa-robot"></i></div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section id="about">
-			<h2>About Me</h2>
+			<h2 class="section-title">About Me</h2>
 			<div class="about-content">
-				<p>I like writing and coding, and involving in code to improve workflow efficiency and experience, with
-					AI as well.</p>
-				<p>Skills: C#, Python, MATLAB, etc.</p>
+				<div class="about-card">
+					<div class="about-icon">
+						<i class="fas fa-user-astronaut"></i>
+					</div>
+					<p>I like writing and coding, and involving in code to improve workflow efficiency and experience,
+						with AI as well.</p>
+					<p>Skills: C#, Python, MATLAB, etc.</p>
+				</div>
 			</div>
 		</section>
 
 		<section id="projects">
-			<h2>My Projects</h2>
+			<h2 class="section-title">My Projects</h2>
 			<div class="projects-grid">
 				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-rocket"></i>
+					</div>
 					<h3>Project 1</h3>
 					<p>Descriptions and Features</p>
-					<a href="#" class="project-link">Detail</a>
+					<a href="#" class="project-link">
+						<span>Detail</span>
+						<i class="fas fa-external-link-alt"></i>
+					</a>
 				</div>
 				<div class="project-card">
+					<div class="project-icon">
+						<i class="fas fa-cogs"></i>
+					</div>
 					<h3>Project 2</h3>
 					<p>Descriptions and Features</p>
-					<a href="#" class="project-link">Detail</a>
+					<a href="#" class="project-link">
+						<span>Detail</span>
+						<i class="fas fa-external-link-alt"></i>
+					</a>
 				</div>
 			</div>
 		</section>
 
 		<section id="contact">
-			<h2>Contact</h2>
+			<h2 class="section-title">Contact</h2>
 			<div class="contact-info">
-				<p>Email: alrcatraz@gmx.com</p>
-				<p>GitHub: github.com/alrcatraz</p>
+				<div class="contact-item">
+					<a href="mailto:alrcatraz@gmx.com" class="contact-link">
+						<div class="contact-icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="contact-text">
+							<h3>Email</h3>
+							<p>alrcatraz@gmx.com</p>
+						</div>
+						<div class="contact-arrow">
+							<i class="fas fa-paper-plane"></i>
+						</div>
+					</a>
+				</div>
+				<div class="contact-item">
+					<a href="https://github.com/alrcatraz" target="_blank" rel="noopener noreferrer"
+						class="contact-link">
+						<div class="contact-icon">
+							<i class="fab fa-github"></i>
+						</div>
+						<div class="contact-text">
+							<h3>GitHub</h3>
+							<p>github.com/alrcatraz</p>
+						</div>
+						<div class="contact-arrow">
+							<i class="fas fa-external-link-alt"></i>
+						</div>
+					</a>
+				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<p>&copy; 2025 Alrcatraz Personal Website. All rights reserved.</p>
+		<div class="footer-content">
+			<p>&copy; 2025 Alrcatraz Personal Website. All rights reserved.</p>
+			<div class="footer-links">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
 	</footer>
 
 	<script src="js/script.js"></script>
