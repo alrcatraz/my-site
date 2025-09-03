@@ -12,147 +12,158 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- Ubuntu and Noto Sans SC for headings -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 	<!-- Noto Serif and Noto Serif SC for body text -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
 
 	<!-- Font Awesome for icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-	<!-- Animated background -->
-	<div class="animated-bg"></div>
+<!-- Animated background -->
+<div class="animated-bg"></div>
 
-	<header>
-		<nav>
-			<h1>Alrcatraz - Write, Code, Future</h1>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+<header>
+	<nav>
+		<h1><a href="index.html" class="logo-link">Alrcatraz</a></h1>
+		<ul>
+			<li><a href="index.html" class="nav-link active">Home</a></li>
+			<li><a href="projects.html" class="nav-link">Projects</a></li>
+			<li><a href="blog/index.html" class="nav-link">Blog</a></li>
+			<li><a href="index.html#contact" class="nav-link">Contact</a></li>
+		</ul>
+	</nav>
+</header>
 
-	<main>
-		<section id="home">
-			<div class="hero">
-				<div class="hero-content">
-					<h2 class="animate-text">Welcome to my personal website</h2>
-					<p class="animate-text">You can know my projects and myself here</p>
-					<button class="cta-button animate-text">
-						<span>Explore</span>
-						<i class="fas fa-arrow-right"></i>
+<main>
+	<section id="home">
+		<div class="hero">
+			<div class="hero-content">
+				<h2 class="animate-text">Welcome to my personal website</h2>
+				<p class="animate-text">You can know my projects and myself here</p>
+				<div class="hero-buttons">
+					<button class="cta-button animate-text" onclick="scrollToSection('about')">
+						<span>About Me</span>
+						<i class="fas fa-user"></i>
 					</button>
-				</div>
-				<div class="hero-visual">
-					<div class="floating-elements">
-						<div class="float-element"><i class="fas fa-code"></i></div>
-						<div class="float-element"><i class="fas fa-pen"></i></div>
-						<div class="float-element"><i class="fas fa-robot"></i></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="about">
-			<h2 class="section-title">About Me</h2>
-			<div class="about-content">
-				<div class="about-card">
-					<div class="about-icon">
-						<i class="fas fa-user-astronaut"></i>
-					</div>
-					<p>I like writing and coding, and involving in code to improve workflow efficiency and experience,
-						with AI as well.</p>
-					<p>Skills: C#, Python, MATLAB, etc.</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="projects">
-			<h2 class="section-title">My Projects</h2>
-			<div class="projects-grid">
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-rocket"></i>
-					</div>
-					<h3>Project 1</h3>
-					<p>Descriptions and Features</p>
-					<a href="#" class="project-link">
-						<span>Detail</span>
-						<i class="fas fa-external-link-alt"></i>
-					</a>
-				</div>
-				<div class="project-card">
-					<div class="project-icon">
-						<i class="fas fa-cogs"></i>
-					</div>
-					<h3>Project 2</h3>
-					<p>Descriptions and Features</p>
-					<a href="#" class="project-link">
-						<span>Detail</span>
-						<i class="fas fa-external-link-alt"></i>
+					<a href="projects.html" class="cta-button secondary animate-text">
+						<span>View Projects</span>
+						<i class="fas fa-briefcase"></i>
 					</a>
 				</div>
 			</div>
-		</section>
-
-		<section id="contact">
-			<h2 class="section-title">Contact</h2>
-			<div class="contact-info">
-				<div class="contact-item">
-					<a href="mailto:alrcatraz@gmx.com" class="contact-link">
-						<div class="contact-icon">
-							<i class="fas fa-envelope"></i>
-						</div>
-						<div class="contact-text">
-							<h3>Email</h3>
-							<p>alrcatraz@gmx.com</p>
-						</div>
-						<div class="contact-arrow">
-							<i class="fas fa-paper-plane"></i>
-						</div>
-					</a>
+			<div class="hero-visual">
+				<div class="floating-elements">
+					<div class="float-element"><i class="fas fa-code"></i></div>
+					<div class="float-element"><i class="fas fa-pen"></i></div>
+					<div class="float-element"><i class="fas fa-robot"></i></div>
 				</div>
-				<div class="contact-item">
-					<a href="https://github.com/alrcatraz" target="_blank" rel="noopener noreferrer"
-						class="contact-link">
-						<div class="contact-icon">
-							<i class="fab fa-github"></i>
-						</div>
-						<div class="contact-text">
-							<h3>GitHub</h3>
-							<p>github.com/alrcatraz</p>
-						</div>
-						<div class="contact-arrow">
-							<i class="fas fa-external-link-alt"></i>
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="footer-content">
-			<p>&copy; 2025 Alrcatraz Personal Website. All rights reserved.</p>
-			<div class="footer-links">
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
 			</div>
 		</div>
-	</footer>
+	</section>
 
-	<script src="js/script.js"></script>
+	<section id="about">
+		<h2 class="section-title">About Me</h2>
+		<div class="about-content">
+			<div class="about-card">
+				<div class="about-icon">
+					<i class="fas fa-user-astronaut"></i>
+				</div>
+				<h3>Hello, I'm Alrcatraz</h3>
+				<p>I like writing and coding, and involving in code to improve workflow efficiency and experience, with AI as well.</p>
+				<p>My skills include C#, Python, MATLAB, and I'm always eager to learn new technologies and tools that can help create better solutions.</p>
+				<div class="skills-section">
+					<h4>Technical Skills</h4>
+					<div class="skills-grid">
+						<div class="skill-item">
+							<i class="fas fa-code"></i>
+							<span>C#</span>
+						</div>
+						<div class="skill-item">
+							<i class="fab fa-python"></i>
+							<span>Python</span>
+						</div>
+						<div class="skill-item">
+							<i class="fas fa-calculator"></i>
+							<span>MATLAB</span>
+						</div>
+						<div class="skill-item">
+							<i class="fas fa-brain"></i>
+							<span>AI/ML</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="recent-projects">
+		<h2 class="section-title">Featured Projects</h2>
+		<div class="projects-preview">
+			<div class="project-preview-card">
+				<div class="project-preview-icon">
+					<i class="fas fa-rocket"></i>
+				</div>
+				<h3>Project Showcase</h3>
+				<p>Explore my latest projects and innovations</p>
+				<a href="projects.html" class="preview-link">
+					<span>View All Projects</span>
+					<i class="fas fa-arrow-right"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h2 class="section-title">Contact</h2>
+		<div class="contact-info">
+			<div class="contact-item">
+				<a href="mailto:alrcatraz@gmx.com" class="contact-link">
+					<div class="contact-icon">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="contact-text">
+						<h3>Email</h3>
+						<p>alrcatraz@gmx.com</p>
+					</div>
+					<div class="contact-arrow">
+						<i class="fas fa-paper-plane"></i>
+					</div>
+				</a>
+			</div>
+			<div class="contact-item">
+				<a href="https://github.com/alrcatraz" target="_blank" rel="noopener noreferrer" class="contact-link">
+					<div class="contact-icon">
+						<i class="fab fa-github"></i>
+					</div>
+					<div class="contact-text">
+						<h3>GitHub</h3>
+						<p>github.com/alrcatraz</p>
+					</div>
+					<div class="contact-arrow">
+						<i class="fas fa-external-link-alt"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="footer-content">
+		<p>&copy; 2025 Alrcatraz Personal Website. All rights reserved.</p>
+		<div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="blog/index.html">Blog</a>
+			<a href="index.html#contact">Contact</a>
+		</div>
+	</div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>

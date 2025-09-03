@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Getting Started with Modern Web Development - Alrcatraz Blog</title>
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/blog.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- 文章元数据 -->
+	<meta name="description" content="A comprehensive guide to getting started with modern web development, covering HTML5, CSS3, JavaScript, and popular frameworks.">
+	<meta name="keywords" content="web development, HTML5, CSS3, JavaScript, frontend, tutorial">
+	<meta name="author" content="Alrcatraz">
+	<meta name="date" content="2024-01-15">
+</head>
+
+<body>
+<!-- Animated background -->
+<div class="animated-bg"></div>
+
+<header>
+	<nav>
+		<h1><a href="../../index.html" class="logo-link">Alrcatraz</a></h1>
+		<ul>
+			<li><a href="../../index.html" class="nav-link">Home</a></li>
+			<li><a href="../../projects.html" class="nav-link">Projects</a></li>
+			<li><a href="../index.html" class="nav-link active">Blog</a></li>
+			<li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<article class="article-container">
+		<header class="article-header">
+			<div class="article-meta">
+                    <span class="article-date">
+                        <i class="fas fa-calendar"></i>
+                        January 15, 2024
+                    </span>
+				<span class="article-author">
+                        <i class="fas fa-user"></i>
+                        Alrcatraz
+                    </span>
+				<span class="article-category">
+                        <i class="fas fa-folder"></i>
+                        <a href="../index.html?category=programming">Programming</a>
+                    </span>
+				<span class="article-reading-time">
+                        <i class="fas fa-clock"></i>
+                        8 min read
+                    </span>
+			</div>
+			<h1 class="article-title">Getting Started with Modern Web Development</h1>
+			<div class="article-tags">
+				<span class="tag">HTML5</span>
+				<span class="tag">CSS3</span>
+				<span class="tag">JavaScript</span>
+				<span class="tag">Frontend</span>
+			</div>
+		</header>
+
+		<div class="article-content">
+			<div class="article-toc">
+				<h3>Table of Contents</h3>
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#html5-basics">HTML5 Basics</a></li>
+					<li><a href="#css3-fundamentals">CSS3 Fundamentals</a></li>
+					<li><a href="#javascript-essentials">JavaScript Essentials</a></li>
+					<li><a href="#modern-frameworks">Modern Frameworks</a></li>
+					<li><a href="#best-practices">Best Practices</a></li>
+					<li><a href="#conclusion">Conclusion</a></li>
+				</ul>
+			</div>
+
+			<section id="introduction">
+				<h2>Introduction</h2>
+				<p>Web development has evolved significantly over the past decade. Modern web development involves creating interactive, responsive, and user-friendly websites and web applications. This guide will walk you through the fundamentals and help you get started with modern web development.</p>
+				<p>Whether you're a complete beginner or looking to update your skills, this comprehensive guide will cover everything you need to know about modern web development practices, tools, and technologies.</p>
+			</section>
+
+			<section id="html5-basics">
+				<h2>HTML5 Basics</h2>
+				<p>HTML5 is the latest version of Hypertext Markup Language, the standard markup language for creating web pages. It introduces new elements, attributes, and behaviors that make web development more powerful and flexible.</p>
+
+				<h3>New Semantic Elements</h3>
+				<p>HTML5 introduced several semantic elements that help define the structure of web pages more clearly:</p>
+				<pre><code>&lt;header&gt; - Represents the header of a document or section
+&lt;nav&gt; - Defines navigation links
+&lt;main&gt; - Specifies the main content of a document
+&lt;article&gt; - Represents independent, self-contained content
+&lt;section&gt; - Defines sections in a document
+&lt;aside&gt; - Defines content aside from the main content
+&lt;footer&gt; - Represents the footer of a document or section</code></pre>
+
+				<h3>Form Enhancements</h3>
+				<p>HTML5 also brings enhanced form controls and validation:</p>
+				<pre><code>&lt;input type="email"&gt; - Email input with validation
+&lt;input type="date"&gt; - Date picker
+&lt;input type="range"&gt; - Slider control
+&lt;input type="color"&gt; - Color picker
+&lt;input type="number"&gt; - Number input with validation</code></pre>
+			</section>
+
+			<section id="css3-fundamentals">
+				<h2>CSS3 Fundamentals</h2>
+				<p>CSS3 is the latest evolution of the Cascading Style Sheets language. It brings powerful new features that allow developers to create stunning visual effects and responsive layouts with less code.</p>
+
+				<h3>Flexbox and Grid</h3>
+				<p>Modern CSS layout is dominated by Flexbox and Grid:</p>
+				<pre><code>/* Flexbox Example */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Grid Example */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}</code></pre>
+
+				<h3>Animations and Transitions</h3>
+				<p>CSS3 makes it easy to create smooth animations and transitions:</p>
+				<pre><code>.element {
+    transition: all 0.3s ease;
+}
+
+.element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}</code></pre>
+			</section>
+
+			<section id="javascript-essentials">
+				<h2>JavaScript Essentials</h2>
+				<p>JavaScript is the programming language of the web. Modern JavaScript (ES6+) introduces many powerful features that make development more efficient and enjoyable.</p>
+
+				<h3>ES6+ Features</h3>
+				<p>Modern JavaScript includes features like arrow functions, destructuring, and template literals:</p>
+				<pre><code>// Arrow functions
+const add = (a, b) => a + b;
+
+// Destructuring
+const { name, age } = person;
+
+// Template literals
+const message = `Hello, ${name}! You are ${age} years old.`;
+
+// Promises and async/await
+async function fetchData() {
+    try {
+        const response = await fetch('/api/data');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}</code></pre>
+			</section>
+
+			<section id="modern-frameworks">
+				<h2>Modern Frameworks</h2>
+				<p>While vanilla JavaScript is powerful, modern web development often relies on frameworks and libraries that provide structure and efficiency:</p>
+
+				<h3>React</h3>
+				<p>React is a popular JavaScript library for building user interfaces:</p>
+				<pre><code>import React, { useState } from 'react';
+
+function Counter() {
+    const [count, setCount] = useState(0);
+
+    return (
+        &lt;div&gt;
+            &lt;p&gt;Count: {count}&lt;/p&gt;
+            &lt;button onClick={() => setCount(count + 1)}&gt;
+                Increment
+            &lt;/button&gt;
+        &lt;/div&gt;
+    );
+}</code></pre>
+
+				<h3>Vue.js</h3>
+				<p>Vue.js is another popular framework known for its simplicity and flexibility:</p>
+				<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;p&gt;{{ message }}&lt;/p&gt;
+    &lt;button @click="reverseMessage"&gt;Reverse Message&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      message: 'Hello Vue!'
+    }
+  },
+  methods: {
+    reverseMessage() {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+}
+&lt;/script&gt;</code></pre>
+			</section>
+
+			<section id="best-practices">
+				<h2>Best Practices</h2>
+				<p>To become a successful web developer, follow these best practices:</p>
+
+				<h3>Code Organization</h3>
+				<ul>
+					<li>Keep your code modular and reusable</li>
+					<li>Use consistent naming conventions</li>
+					<li>Write clean, readable code</li>
+					<li>Comment your code when necessary</li>
+				</ul>
+
+				<h3>Performance Optimization</h3>
+				<ul>
+					<li>Minimize HTTP requests</li>
+					<li>Use lazy loading for images</li>
+					<li>Optimize images and assets</li>
+					<li>Use CDNs for faster delivery</li>
+				</ul>
+
+				<h3>Accessibility</h3>
+				<ul>
+					<li>Use semantic HTML</li>
+					<li>Provide alternative text for images</li>
+					<li>Ensure keyboard navigation</li>
+					<li>Test with screen readers</li>
+				</ul>
+			</section>
+
+			<section id="conclusion">
+				<h2>Conclusion</h2>
+				<p>Modern web development is an exciting field with endless possibilities. By mastering HTML5, CSS3, JavaScript, and modern frameworks, you'll be well-equipped to create amazing web experiences.</p>
+				<p>Remember that web development is a continuous learning process. Stay curious, keep practicing, and don't be afraid to experiment with new technologies and techniques.</p>
+				<p>Happy coding!</p>
+			</section>
+		</div>
+
+		<footer class="article-footer">
+			<div class="article-navigation">
+				<div class="nav-prev">
+					<a href="#" class="nav-link">
+						<i class="fas fa-arrow-left"></i>
+						<span>Previous Article</span>
+					</a>
+				</div>
+				<div class="nav-next">
+					<a href="#" class="nav-link">
+						<span>Next Article</span>
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="article-share">
+				<h3>Share this article</h3>
+				<div class="share-buttons">
+					<a href="#" class="share-button twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#" class="share-button linkedin">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" class="share-button facebook">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#" class="share-button copy">
+						<i class="fas fa-link"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="author-bio">
+				<div class="author-avatar">
+					<i class="fas fa-user-astronaut"></i>
+				</div>
+				<div class="author-info">
+					<h3>About Alrcatraz</h3>
+					<p>Passionate developer interested in web technologies, AI, and creating efficient solutions. Love to share knowledge and help others learn.</p>
+					<div class="author-social">
+						<a href="https://github.com/alrcatraz" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="mailto:alrcatraz@gmx.com">
+							<i class="fas fa-envelope"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</article>
+</main>
+
+<footer>
+	<div class="footer-content">
+		<p>&copy; 2025 Alrcatraz Personal Website. All rights reserved.</p>
+		<div class="footer-links">
+			<a href="../../index.html">Home</a>
+			<a href="../../projects.html">Projects</a>
+			<a href="../index.html">Blog</a>
+			<a href="../../index.html#contact">Contact</a>
+		</div>
+	</div>
+</footer>
+
+<script src="../../js/main.js"></script>
+<script src="../../js/blog.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects - Alrcatraz</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<!-- Animated background -->
+<div class="animated-bg"></div>
+
+<header>
+	<nav>
+		<h1><a href="index.html" class="logo-link">Alrcatraz</a></h1>
+		<ul>
+			<li><a href="index.html" class="nav-link">Home</a></li>
+			<li><a href="projects.html" class="nav-link active">Projects</a></li>
+			<li><a href="blog/index.html" class="nav-link">Blog</a></li>
+			<li><a href="index.html#contact" class="nav-link">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<section id="projects-header">
+		<div class="projects-hero">
+			<h1>My Projects</h1>
+			<p>A collection of my work and experiments</p>
+		</div>
+	</section>
+
+	<section id="projects-content">
+		<div class="projects-layout">
+			<!-- 项目索引侧边栏 -->
+			<div class="projects-sidebar">
+				<h3>Project Categories</h3>
+				<ul class="project-categories">
+					<li><a href="#" class="category-link active" data-category="all">All Projects</a></li>
+					<li><a href="#" class="category-link" data-category="web">Web Development</a></li>
+					<li><a href="#" class="category-link" data-category="ai">AI & Machine Learning</a></li>
+					<li><a href="#" class="category-link" data-category="tools">Tools & Utilities</a></li>
+					<li><a href="#" class="category-link" data-category="games">Games & Simulations</a></li>
+				</ul>
+
+				<div class="project-stats">
+					<h4>Statistics</h4>
+					<div class="stat-item">
+						<span class="stat-number">12</span>
+						<span class="stat-label">Total Projects</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">8</span>
+						<span class="stat-label">Open Source</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- 项目内容区域 -->
+			<div class="projects-main">
+				<div class="projects-grid" id="projects-container">
+					<!-- 项目卡片将通过JavaScript动态加载 -->
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="footer-content">
+		<p>&copy; 2025 Alrcatraz Personal Website. All rights reserved.</p>
+		<div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="blog/index.html">Blog</a>
+			<a href="index.html#contact">Contact</a>
+		</div>
+	</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+
+</html>
